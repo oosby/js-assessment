@@ -56,8 +56,8 @@ exports.functionsAnswers = {
     let args = [...arguments].slice(1);
     const func = fn;
 
-    function curried(func) {
-      args = args.concat([...arguments]);
+    function curried(cargs) {
+      args = args.concat(cargs);
       if (args.length === fn.length) {
         return fn.apply(this, args);
       } else {

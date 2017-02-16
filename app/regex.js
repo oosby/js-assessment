@@ -28,8 +28,6 @@ exports.regexAnswers = {
     return (/^\d{3}-\d{3}-\d{4}$/).test(str);
   },
 
-  // $459,049,393.21
-  // 4$3,432,034.12
   isUSD: function(str) {
     return /(^\$\d{1,3}(,\d{3})*(\.\d{2})?)$/.test(str)
     
